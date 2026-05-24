@@ -1,0 +1,253 @@
+// mobile
+@media (max-width: 767px) {
+  .screen {
+    background: unset;
+    padding: unset;
+  }
+  .list-menu {
+    display: none;
+  }
+  .col-right {
+    padding: 12px 16px;
+  }
+  .list-text-header {
+    display: unset;
+    flex: unset;
+    align-self: unset;
+    width: unset;
+  }
+  .list-text-header {
+    display: none;
+  }
+  .list-user-header {
+    gap: 6px;
+    flex-direction: row-reverse;
+    span {
+      display: none;
+    }
+  }
+  .list-container-header {
+    justify-content: space-between;
+  }
+  .head-page {
+    padding: 16px;
+  }
+  .nav__bars-btn {
+    display: block !important;
+  }
+  .nav-mobile-input {
+    z-index: 1;
+    left: 0;
+  }
+  .icon-responsive {
+    display: block;
+  }
+  .icon-filter {
+    padding: 5px 10px;
+    background: #386641;
+    border-radius: 100%;
+  }
+  .icon-web {
+    display: none;
+  }
+  .logo-responsive {
+    display: block;
+  }
+  .list-input-search {
+    gap: 4px;
+    padding: 12px;
+    height: 32px;
+
+    input {
+      color: #a1a1ab;
+      font-family: Noto Sans;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+  .list-add {
+    display: none;
+  }
+  .notification-list {
+    width: 20px;
+    height: 20px;
+  }
+  .user-list {
+    width: 30px;
+    height: 30px;
+  }
+  i {
+    width: unset !important;
+    height: unset !important;
+  }
+  .list-container-header {
+    height: 30px;
+    margin: 24px 0;
+  }
+  .col-right-container {
+    gap: unset;
+  }
+  .icon-add {
+    background: #ff8f19 !important;
+  }
+  .list-text-header-res {
+    display: block;
+  }
+  .info-responsive {
+    display: block;
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1536px) {
+  .screen {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .text-login,
+  .title-login p,
+  .text-user {
+    font-size: 25px !important;
+  }
+  .body-login {
+    gap: 35px !important;
+    padding: 40px !important;
+  }
+  .save-user p,
+  .box-forget .forget-pass a,
+  .submit .btn-login,
+  .btn-back a,
+  .submit-forget .btn-login,
+  .input-user input {
+    font-size: 18px !important;
+  }
+  .submit .btn-login,
+  .btn-back a,
+  .submit-forget .btn-login {
+    padding: 20px 75px !important;
+  }
+  .dropdown-content {
+    .item-link {
+      .text {
+        font-size: 16px !important;
+      }
+    }
+  }
+  .list-input-search {
+    padding: 0px 0px 0px 29px !important;
+    input {
+      font-size: 16px !important;
+    }
+  }
+  .list-filter {
+    width: 240px !important;
+    padding: 12px 28px !important   ;
+    .ant-select-selection-placeholder {
+      font-size: 16px;
+    }
+    .ant-select-selection-item {
+      font-size: 16px;
+    }
+  }
+
+  .list-text-header {
+    h2 {
+      font-size: 28px;
+    }
+    span {
+      font-size: 18px;
+    }
+  }
+  .list-user-header {
+    span {
+      font-size: 18px;
+    }
+    .user-list {
+      width: 45px;
+      height: 45px;
+    }
+    .notification-list {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .item-link {
+    #item-menu {
+      .text {
+        font-size: 16px !important;
+      }
+    }
+  }
+  #item-menu {
+    padding: 10px 26px !important;
+  }
+  .list-table {
+    thead,
+    tbody {
+      tr {
+        td {
+          font-size: 16px !important;
+        }
+      }
+    }
+    tbody {
+      padding: 15px 12px;
+    }
+  }
+  .modal-payroll {
+    width: 751px;
+    height: 660px !important;
+  }
+  .change-all .change-head {
+    font-size: 35px !important;
+  }
+  .change-all .item-change-body p {
+    font-size: 18px !important;
+  }
+  .change-all {
+    width: 600px !important;
+  }
+  .change-footer {
+    .cancel {
+      width: 199px !important;
+      padding: 15px 0px 16px 0px !important;
+    }
+    button {
+      font-size: 18px !important;
+    }
+  }
+  .modal-payroll .body-payroll .body-child1 {
+    max-height: 380px;
+  }
+  .body-payroll1 {
+    p {
+      font-size: 35px !important;
+    }
+    input {
+      font-size: 18px !important;
+    }
+  }
+  .item-chil1-cn,
+  .child1-text {
+    font-size: 18px !important;
+    p {
+      font-size: 18px !important;
+    }
+  }
+  .dropdown-content span {
+    font-size: 15px !important;
+  }
+  .user-all {
+    width: 200px;
+  }
+  .list-table thead {
+    padding: 0 12px !important;
+  }
+
+  .body-table-contract {
+    tr input {
+      height: 60px !important;
+    }
+  }
+}
