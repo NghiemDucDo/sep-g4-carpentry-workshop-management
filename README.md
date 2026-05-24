@@ -39,6 +39,53 @@ SEP-G4 CarpentryWorkshop là hệ thống quản lý nhân sự, chấm công, l
 +-- README.md
 ```
 
+Chi tiết hơn:
+
+```text
+Code/
++-- CarpentryWorkshopAPI/
+|   +-- CarpentryWorkshopAPI.sln
+|   +-- CarpentryWorkshopAPI/
+|       +-- Attributes/        # Custom authorization/filter logic
+|       +-- Controllers/       # API endpoints theo nghiệp vụ
+|       +-- DTO/               # Request/response models
+|       +-- IServices/         # Service interfaces
+|       +-- Mapper/            # AutoMapper profile
+|       +-- Models/            # EF Core entities và DbContext
+|       +-- Properties/        # launchSettings.json
+|       +-- Services/          # Business logic/service layer
+|       +-- Program.cs         # Startup, DI, auth, Swagger, middleware
+|       +-- appsettings.json   # Connection string, JWT config
+|
++-- CarpentryWorkshopClient/
+    +-- public/                # Static files, index.html, web.config
+    +-- src/
+    |   +-- fireBase/          # Firebase config
+    |   +-- serviceFake/       # Mock/fake data
+    |   +-- sevices/           # Axios API service functions
+    |   +-- view/
+    |       +-- assets/        # Images/icons
+    |       +-- component/     # React screen/components
+    |       +-- fonts/         # Local fonts
+    |       +-- logicTime/     # Date/time helper functions
+    |       +-- scss/          # Main and responsive styles
+    |   +-- App.js             # Protected app routes by permission
+    |   +-- index.js           # React entry, public/protected routing
+    +-- package.json           # Frontend dependencies/scripts
+```
+
+| Khu vực | Vai trò |
+| --- | --- |
+| `Controllers` | Nhận request HTTP, kiểm tra quyền qua attribute, gọi service hoặc EF Core để xử lý nghiệp vụ. |
+| `DTO` | Định nghĩa dữ liệu truyền vào/ra API, tách khỏi entity database. |
+| `Models` | Chứa entity scaffold từ SQL Server và `SEPG4CWMSContext`. |
+| `Services` / `IServices` | Gom logic nghiệp vụ dùng lại như account, salary, bonus, advance, day, link, special occasion. |
+| `Mapper` | Cấu hình AutoMapper để chuyển đổi entity sang DTO và ngược lại. |
+| `src/sevices` | Tập trung các hàm gọi API từ frontend. Tên thư mục hiện tại trong source là `sevices`. |
+| `src/view/component` | Các màn hình và component nghiệp vụ chính của React app. |
+| `src/view/scss` | Style tổng và style responsive cho từng màn hình. |
+| `Database` | Chứa file `.bacpac` để restore database khi cần chạy hoặc đối chiếu dữ liệu. |
+
 ## Công nghệ chính
 
 ### Backend
